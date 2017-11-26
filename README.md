@@ -8,7 +8,8 @@ We run all of our terraform commands though docker.
 
 - Install [docker](https://docs.docker.com/engine/installation/#supported-platforms)
 - Run `docker pull hashicorp/terraform` to download terraform
-
+- [Create an AWS account](https://portal.aws.amazon.com/billing/signup) - Firefox will provide you with better experience :)
+- [Sign in to AWS account](https://signin.aws.amazon.com/signin)
 
 ## Running commands
 
