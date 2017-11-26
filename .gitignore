@@ -11,3 +11,6 @@
 .idea/
 **/*.swp
 **/*.swo
+
+#Pem files
+*.pem
