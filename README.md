@@ -39,6 +39,7 @@ Now run,
 terraform --help
 ```
 
+
 ## Getting ready - Can be done in the workshop
 
 - [Create an AWS account](https://portal.aws.amazon.com/billing/signup) - Firefox will provide you with better experience :)
@@ -57,6 +58,31 @@ terraform --help
   - Give it a name
   - Save the `.pem` file it provides, safely. This is the private certificate we will use to ssh into EC2 instances.
   - Move the `.pem` file to `~/.ssh`, and reduce its permissions to 0600 using `chmod 0600 ~/.ssh/[pemfile]`
+
+## Typical execution cycle
+
+This is the typical execution cycle of an application managed by terraform
+
+```
+
+
+   +-----------+          +----------+
+   | Plan      | -------> |  Apply   |
+   +-----------+          +----------+
+                            |     |
+                            |     \------------\  +-----+
+                            |                  |  |  *  |
+                            V                  V  V     |
+                      +-----------+           +--------------+              +---------------+
+                      |  Create   | ------->  |   Upgrade    |  --------->  |  Destroy      |
+                      +-----------+           +--------------+              +---------------+
+
+
+```
+
+
+`terraform plan` and `terraform apply` commands are used to mange the application infrastructure on the cloud.
+
 
 ### Useful commands
 
