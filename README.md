@@ -7,7 +7,6 @@ This repo contains material to conduct a Terraform Workshop.
 We run all of our terraform commands though docker.
 
 - Install [docker](https://docs.docker.com/engine/installation/#supported-platforms)
-- Install [aws cli](https://aws.amazon.com/cli/)
 - Run `docker pull hashicorp/terraform` to download terraform
 
 
