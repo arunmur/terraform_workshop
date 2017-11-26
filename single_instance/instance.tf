@@ -26,16 +26,6 @@ resource "aws_security_group_rule" "app_allow_ssh" {
   security_group_id = "${aws_security_group.app.id}"
 }
 
-resource "aws_security_group_rule" "app_allow_http" {
-  type            = "ingress"
-  from_port       = 8000
-  to_port         = 8000
-  protocol        = "TCP"
-  cidr_blocks     = ["0.0.0.0/0"]
-
-  security_group_id = "${aws_security_group.app.id}"
-}
-
 resource "aws_instance" "app" {
   depends_on      = ["aws_security_group_rule.app_allow_ssh"]
   ami             = "ami-41c12e23"
