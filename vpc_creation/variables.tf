@@ -16,7 +16,7 @@ variable "environment" {
 
 variable "vpc_name" {
     description = "The Name to be used for VPC"
-    default = "my-vpc"
+    default = "workshop"
 }
 
 variable "vpc_cidr" {
