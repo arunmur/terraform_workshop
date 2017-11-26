@@ -23,11 +23,11 @@ output "security_group_name" {
 }
 
 output "instance1_ip" {
-  value = "${aws_instance.app1.name}"
+  value = "${aws_instance.app1.public_ip}"
 }
 
 output "instance2_ip" {
-  value = "${aws_instance.app2.name}"
+  value = "${aws_instance.app2.public_ip}"
 }
 
 output "app_loc" {
