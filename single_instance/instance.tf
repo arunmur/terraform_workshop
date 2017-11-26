@@ -55,13 +55,7 @@ resource "aws_instance" "app" {
 	}
 
   provisioner "remote-exec" {
-    inline = [
-      "sudo useradd -ms /bin/bash -d /app myapp",
-      "sudo mv /tmp/app/* /app/",
-      "sudo cp /app/myapp.service /etc/systemd/system/",
-      "sudo chmod a+rwx /app/*",
-      "sudo systemctl start myapp"
-    ]
+    script = "./setup.sh"
 
     connection {
       type     = "ssh"
