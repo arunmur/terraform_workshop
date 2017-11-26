@@ -26,22 +26,22 @@ variable "vpc_cidr" {
 
 variable "public_subnet_a_cidr" {
     description = "The CIDR block for public subnet A"
-    default = "10.1.0.0/20"
+    default = "10.1.0.0/18"
 }
 
 variable "public_subnet_b_cidr" {
     description = "The CIDR block for public subnet B"
-    default = "10.1.64.0/20"
+    default = "10.1.64.0/18"
 }
 
 variable "private_subnet_a_cidr" {
     description = "The CIDR block for private subnet A"
-    default = "10.1.128.0/20"
+    default = "10.1.128.0/18"
 }
 
 variable "private_subnet_b_cidr" {
     description = "The CIDR block for private subnet B"
-    default = "10.1.192.0/20"
+    default = "10.1.192.0/18"
 }
 
 variable "cluster_private_dns" {
