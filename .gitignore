@@ -5,3 +5,8 @@
 
 # Module directory
 .terraform/
+
+# Module directory
+.idea/
+**/*.swp
+**/*.swo

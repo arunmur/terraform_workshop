@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-cat '{"hello": "world"}' > hello
+echo "{\"hello\": \"world\", \"iam\": \"$(hostname -f)\" }" > hello
 if python3 --version
 then
   python3 -m http.server 8000
