@@ -8,6 +8,7 @@ We run all of our terraform commands though docker.
 
 - Install [docker](https://docs.docker.com/engine/installation/#supported-platforms)
 - Run `docker pull hashicorp/terraform` to download terraform
+- Create an AWS account, [instuctions available here](./aws_account_setup/README.md)
 
 
 ## Running commands
@@ -38,10 +39,6 @@ Now run,
 terraform --help
 ```
 
-
-## Getting ready - Can be done in the workshop
-
-To create an account follow instuctions [here](./aws_account_setup/README.md)
 
 ## Typical execution cycle
 
